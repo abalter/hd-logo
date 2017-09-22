@@ -1,0 +1,150 @@
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="100%" height="165"
+   >
+
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Bitter');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+      @import url('https://fonts.googleapis.com/css?family=Volkhov|Vollkorn');
+    </style>
+    <style>
+      :root {
+      --graphics: #670309;
+      --logo-text: #282B28;
+      --services: #fff;
+      --bottom-bar-font-size: 0.8em;
+      }
+      .house{
+        fill: none;
+        stroke: var(--graphics);
+      }
+      .bottom{
+        fill: var(--graphics);
+        stroke: none;
+      }
+      .logo{
+        fill: var(--logo-text);
+        stroke: none;
+      }
+      .features{
+        fill: #282B28;
+        stroke: none;
+      }
+
+      .services {
+          fill: var(--services);
+          stroke: none;
+          text-anchor: start;
+          alignment-baseline="middle"
+          font-weight="400"
+          font-family="Roboto Condensed"
+          letter-spacing="0.03em"
+      }
+
+      .service {
+        font-size: var(--bottom-bar-font-size);
+        font-family="Roboto Condensed";
+      }
+
+      .separator {
+        font-size: var(--bottom-bar-font-size);
+        font-family="Roboto Condensed";
+      }
+    </style>
+  </defs>
+
+  <object type="image/svg+xml">
+    <param name="house" value="black"/>
+    <param name="logo" value="#320400"/>
+    <param name="services" value="#320400"/>
+  </object>
+
+  <g transform="translate(0,0)">
+    <svg>
+      <!--  ROOF  -->
+      <path d="m 5 100 l 90 -50 l 90 50" stroke-width="15" stroke-linecap="butt" stroke-linejoin="miter" class="house"/>
+
+      <!--  CHIMNEY  -->
+      <path d="m 155 60 l 0 20" stroke-width="15" stroke-linecap="butt" class="house"/>
+
+      <!--  LEFT WALL -->
+      <path d="m 25 90 l 0 60" stroke-width="12" stroke-linecap="butt" stroke-linejoin="miter" class="house"/>
+
+      <!--  RIGHT WALL -->
+      <path d="m 165 90 l 0 60" stroke-width="12" stroke-linecap="butt" stroke-linejoin="miter" class="house"/>
+
+      <!--  DOOR  -->
+      <rect x="60" y="95" height="45" width="25" class="features"/>
+
+      <!--  SINGLE WINDOW DEFINITION -->
+      <defs>
+        <rect id="window" x="0" y="0" width="10" height="10" class="features"/>
+      </defs>
+
+      <!--  WINDOWS  -->
+      <g transform="translate(105,95)">
+        <use href="#window" transform="translate(0 0)"/>
+        <use href="#window" transform="translate(0 12)"/>
+        <use href="#window" transform="translate(12 0)"/>
+        <use href="#window" transform="translate(12 12)"/>
+      </g>
+
+      <!--  BOTTOM BAR AND TEXT -->
+      <g transform="translate(19,140)">
+        <svg width="100%" height="25">
+          <rect x="0" y="0" width="100%" height="25" class="bottom" stroke-width="0"/>
+          <text x="1em" y="65%" class="services" font-family="Roboto Condensed" >
+            <tspan class="service">residential</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">commercial</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">buyer</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">seller</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">warranty</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">expert-witness</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">sewer</tspan>
+            <tspan class="separator" dx="5px">&#9632;</tspan>
+            <tspan class="service" dx="5px">radon</tspan>
+          </text>
+
+        </svg>
+      </g>
+
+      <!--  HOUSE DETECTIVES LLC  -->
+      <g transform="translate(265,140)">
+        <line x1="0" x2="500" y1="0" y2="0" style="stroke: green"></line>
+        <text dx="70px" dy="0"
+          text-anchor="start"
+          font-size="38px"
+          font-family="Roboto Slab"
+          font-weight="bold"
+          transform="rotate(-90)"
+          class="logo">the</text>
+        <text dx="0" dy="0"
+          text-anchor="start"
+          font-size="78px"
+          font-family="Roboto Slab"
+          font-weight="bold"
+          class="logo">
+            <tspan class="name" x="5" dx="0" dy="-73">House</tspan>
+            <tspan class="name" x="-70" dx="0" dy="65">Detectives</tspan>
+            <tspan class="name" x="0" dx="330" dy="-2" font-size="24px">llc</tspan>
+        </text>
+      </g>
+    </svg>
+  </g>
+</svg>
+
+<!--http://run.plnkr.co/preview/cj7tws0y600063d5wzptaadd1///-->
+<!--https://rawgit.com/abalter/9fbee0b2e25c74ea6950749820f7aa1e/raw/ebcce53445c673502a2fd801ea783ccf24617241/svgtest.html//-->
+<!--https://rawgit.com/abalter/9fbee0b2e25c74ea6950749820f7aa1e/raw/86bc3ada0fbbf0f5ea28dc1b813cad9f0769ae6e/hd-logo.svg//-->
